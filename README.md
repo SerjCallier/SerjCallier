@@ -1,6 +1,6 @@
 # 🚀 Serj Callier | Founder @ [KlierNav Innovations](https://www.kliernav.com)
 
-![KlierNav Banner](file:///C:/Users/Serj/.gemini/antigravity/brain/b5115b3f-bf34-44a0-979c-8ea5ae334bbb/kliernav_github_banner_1773784674370.png)
+![KlierNav Banner](./docs/assets/kliernav_github_banner_1773784674370.png)
 
 ### 💡 Vision & Impact
 I am the founder of **KlierNav Innovations**, an AI-First digital agency based in Argentina. We don't just build software; we engineer **intelligent ecosystems** that scale businesses through high-precision automation and human-centric design.
@@ -49,33 +49,33 @@ Automation drives scale, but human supervision ensures excellence. My approach c
 **Premium Booking SaaS** integrated with n8n and Google Sheets. Designed for high-end professional services.
 - **Impact:** Zero-subscription entry for businesses with enterprise-grade scaling potential.
 - **Tech:** React 19, Tailwind, n8n Orchestration.
-![Mockup](file:///C:/Users/Serj/.gemini/antigravity/brain/b5115b3f-bf34-44a0-979c-8ea5ae334bbb/agendapro_mockup_1773784692157.png)
+![Mockup](./docs/assets/agendapro_mockup_1773784692157.png)
 
 #### 🤖 [Klier-AI-Core](https://github.com/SerjCallier/klier-ai-core)
 Technical deep-dive into **RAG pipelines**, Lead Scoring engines, and B2B automation flows.
 - **Core Value:** Demonstrating the "AI-First" middleware approach for front-office operations.
 - **Tech:** Gemini Pro, n8n, Custom Node Orchestrators.
-![AI Architecture](file:///C:/Users/Serj/.gemini/antigravity/brain/b5115b3f-bf34-44a0-979c-8ea5ae334bbb/ai_architecture_viz_1773784710028.png)
+![AI Architecture](./docs/assets/ai_architecture_viz_1773784710028.png)
 
 #### 📊 [Klier-CRM](https://github.com/SerjCallier/klier-crm)
 Internal ops tool featuring interactive Kanban boards and MRR analytics.
 - **Tech:** Hello-Pangea DND, Recharts, Supabase Auth.
-![CRM Mockup](file:///C:/Users/Serj/.gemini/antigravity/brain/b5115b3f-bf34-44a0-979c-8ea5ae334bbb/crm_dashboard_mockup_1773784725959.png)
+![CRM Mockup](./docs/assets/crm_dashboard_mockup_1773784725959.png)
 
 #### 🏠 [Klier-Homes](https://github.com/SerjCallier/klier-homes)
 High-performance property catalog with immersive galleries and SEO optimization.
 - **Tech:** Mobile-First React, AI RAG Agent for inquiries.
-![Real Estate Mockup](file:///C:/Users/Serj/.gemini/antigravity/brain/b5115b3f-bf34-44a0-979c-8ea5ae334bbb/real_estate_mockup_1773784740813.png)
+![Real Estate Mockup](./docs/assets/real_estate_mockup_1773784740813.png)
 
 #### 🏋️ [KlierFit](https://github.com/SerjCallier/klierfit)
 Premium landing page for gyms with energetic aesthetics and lead conversion focus.
 - **Tech:** React 19, Tailwind, Framer Motion.
-![KlierFit Mockup](file:///C:/Users/Serj/.gemini/antigravity/brain/b5115b3f-bf34-44a0-979c-8ea5ae334bbb/klierfit_mockup_1773811693614.png)
+![KlierFit Mockup](./docs/assets/klierfit_mockup_1773811693614.png)
 
 #### 🗺️ [Klier-Scout](https://github.com/SerjCallier/klier-scout)
 Automated data engine for business discovery and digital health auditing.
 - **Tech:** Node.js, Puppeteer, AI Scoring Pipeline.
-![Maps Scraper Viz](file:///C:/Users/Serj/.gemini/antigravity/brain/b5115b3f-bf34-44a0-979c-8ea5ae334bbb/maps_scraper_viz_1773811709203.png)
+![Maps Scraper Viz](./docs/assets/maps_scraper_viz_1773811709203.png)
 
 ---
 
