@@ -43,39 +43,33 @@ Automation drives scale, but human supervision ensures excellence. My approach c
 
 ---
 
-### 🌟 Active Innovation (Featured Projects)
+### 🌟 The KlierNav Product Suite
 
-#### 📅 [Klierbook](https://github.com/SerjCallier/klierbook)
-**Premium Booking SaaS** integrated with n8n and Google Sheets. Designed for high-end professional services.
-- **Impact:** Zero-subscription entry for businesses with enterprise-grade scaling potential.
-- **Tech:** React 19, Tailwind, n8n Orchestration.
-![Mockup](./docs/assets/agendapro_mockup_1773784692157.png)
+#### 📅 [Klierbook](https://github.com/SerjCallier/klierbook) — Zero-Cost Booking SaaS
+Turn any service business into a **24/7 self-scheduling machine.** Premium frontend + n8n + Google Sheets backend = enterprise booking at zero recurring cost. Built for spas, clinics, barbershops, and consultants.
+- **Why it matters:** Businesses get started for free and scale when they're ready — no vendor lock-in.
+- ![React](https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black) ![n8n](https://img.shields.io/badge/n8n-FF6D5A?style=flat-square&logo=n8n) ![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css)
 
-#### 🤖 [Klier-AI-Core](https://github.com/SerjCallier/klier-ai-core)
-Technical deep-dive into **RAG pipelines**, Lead Scoring engines, and B2B automation flows.
-- **Core Value:** Demonstrating the "AI-First" middleware approach for front-office operations.
-- **Tech:** Gemini Pro, n8n, Custom Node Orchestrators.
-![AI Architecture](./docs/assets/ai_architecture_viz_1773784710028.png)
+#### 🤖 [Klier-AI-Core](https://github.com/SerjCallier/klier-ai-core) — The AI Nervous System
+The **middleware layer** that powers the entire KlierNav pipeline. Connects lead discovery → AI scoring → WhatsApp outreach → CRM — automated end-to-end with HITL validation at every client touchpoint.
+- **Scale:** 500+ leads scored per run. < 5 min from raw data to personalized outreach.
+- ![Gemini](https://img.shields.io/badge/Gemini_Pro-8E75C2?style=flat-square&logo=google-gemini) ![n8n](https://img.shields.io/badge/n8n-FF6D5A?style=flat-square&logo=n8n) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python)
 
-#### 📊 [Klier-CRM](https://github.com/SerjCallier/klier-crm)
-Internal ops tool featuring interactive Kanban boards and MRR analytics.
-- **Tech:** Hello-Pangea DND, Recharts, Supabase Auth.
-![CRM Mockup](./docs/assets/crm_dashboard_mockup_1773784725959.png)
+#### 📊 [Klier-CRM](https://github.com/SerjCallier/klier-crm) — Operational Command Center
+Purpose-built CRM for digital agency ops: **drag-and-drop Kanban pipelines**, real-time MRR dashboards, integrated service catalog, and role-based access — all without monthly seat fees.
+- ![CI](https://github.com/SerjCallier/klier-crm/actions/workflows/ci.yml/badge.svg) ![React](https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase)
 
-#### 🏠 [Klier-Homes](https://github.com/SerjCallier/klier-homes)
-High-performance property catalog with immersive galleries and SEO optimization.
-- **Tech:** Mobile-First React, AI RAG Agent for inquiries.
-![Real Estate Mockup](./docs/assets/real_estate_mockup_1773784740813.png)
+#### 🏠 [Klier-Homes](https://github.com/SerjCallier/klier-homes) — Luxury Real Estate Template
+Properties that **sell themselves**: immersive galleries, AI-powered 24/7 inquiry agent, and SEO architecture built for local search dominance. Designed for agencies and brokers competing on presentation.
+- ![React](https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black) ![SEO](https://img.shields.io/badge/SEO_First-47A248?style=flat-square&logo=google) ![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css)
 
-#### 🏋️ [KlierFit](https://github.com/SerjCallier/klierfit)
-Premium landing page for gyms with energetic aesthetics and lead conversion focus.
-- **Tech:** React 19, Tailwind, Framer Motion.
-![KlierFit Mockup](./docs/assets/klierfit_mockup_1773811693614.png)
+#### 🏋️ [KlierFit](https://github.com/SerjCallier/klierfit) — High-Energy Fitness Landing
+Neon-dark glassmorphism landing that captures gym leads in **under 30 seconds.** Mobile-first design for the 75%+ of fitness prospects browsing on phones. Framer Motion animations that pulse with energy.
+- ![React](https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black) ![Framer](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer) ![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css)
 
-#### 🗺️ [Klier-Scout](https://github.com/SerjCallier/klier-scout)
-Automated data engine for business discovery and digital health auditing.
-- **Tech:** Node.js, Puppeteer, AI Scoring Pipeline.
-![Maps Scraper Viz](./docs/assets/maps_scraper_viz_1773811709203.png)
+#### 🗺️ [Klier-Scout](https://github.com/SerjCallier/klier-scout) — AI Lead Discovery Engine
+Discovers businesses on Google Maps, extracts their **full digital footprint** (website health, social presence, review sentiment), and scores them with Gemini Pro for sales readiness. Cold outreach with precision data = consulting, not spam.
+- ![Node](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js) ![Puppeteer](https://img.shields.io/badge/Puppeteer-40B5A4?style=flat-square&logo=puppeteer) ![Gemini](https://img.shields.io/badge/Gemini_Pro-8E75C2?style=flat-square&logo=google-gemini)
 
 ---
 
