@@ -1,3 +1,6 @@
+<a id="english"></a>
+**English** | [Español](#spanish)
+
 # Sergio Callier | Voice AI & Real-Time Systems Engineer — AI Systems Architect
 
 ![Sergio Callier Engineering Overview](./docs/assets/profile-banner.svg)
@@ -98,15 +101,6 @@ Deterministic root-cause diagnostic engine for cellular access networks (4G LTE 
 
 ---
 
-## 📈 Engineering Activity & Insights
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=SerjCallier&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="SerjCallier GitHub Stats" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SerjCallier&layout=compact&theme=tokyonight&hide_border=true&hide=html,css" alt="SerjCallier Top Languages" height="165" />
-</div>
-
----
-
 ## 📬 Contact & Links
 
 - 💼 **LinkedIn:** [linkedin.com/in/sergio-callier-578b71a3](https://www.linkedin.com/in/sergio-callier-578b71a3)
@@ -115,12 +109,12 @@ Deterministic root-cause diagnostic engine for cellular access networks (4G LTE 
 
 ---
 
-<details>
-<summary>🇦🇷 Versión en Español (Perfil Técnico Completo)</summary>
-
-<br/>
+<a id="spanish"></a>
+[English](#english) | **Español**
 
 # Sergio Callier | Ingeniero de Sistemas Voice AI & Tiempo Real — Arquitecto de Sistemas IA
+
+![Sergio Callier Visión General de Ingeniería](./docs/assets/profile-banner.svg)
 
 ### 💡 Visión de Ingeniería y Enfoque de Sistemas
 Ingeniero Senior de Sistemas de IA en Tiempo Real especializado en pipelines de streaming de voz de baja latencia, resiliencia de gateways LLM multi-proveedor y evaluación determinista de seguridad agéntica (*red-teaming*). Con más de 10 años de trayectoria en ingeniería de redes de acceso de telecomunicaciones de grado carrier (Huawei 5G/4G RAN, RF, fibra óptica).
@@ -130,26 +124,69 @@ Ingeniero Senior de Sistemas de IA en Tiempo Real especializado en pipelines de 
 - **Red-Teaming y Evals Deterministas:** Harness de evaluación automatizada con 4/4 categorías de ataques adversariales bloqueados en CI antes de despliegues a producción.
 - **Disponibilidad de Grado Carrier:** Aplicación del rigor de SLAs de telecomunicaciones al diseño de software, manteniendo arquitecturas sin puntos únicos de falla (*zero single-point-of-failure*).
 
+```mermaid
+flowchart TD
+    classDef voice fill:#0f172a,stroke:#38bdf8,stroke-width:2px,color:#fff;
+    classDef gw fill:#0f172a,stroke:#6366f1,stroke-width:2px,color:#fff;
+    classDef eval fill:#0f172a,stroke:#a78bfa,stroke-width:2px,color:#fff;
+    classDef ran fill:#0f172a,stroke:#fbbf24,stroke-width:2px,color:#fff;
+
+    CLIENT["🎙️ Clientes Telefónicos / Web\n(Twilio · Telnyx · WebSockets)"] --> VAI["⚡ Bridge de Voz IA\n(Node.js · <50ms Barge-In)"]:::voice
+    VAI --> GW["🔄 Gateway LLM Resiliente\n(Rotación Ponderada · Failover Multi-Proveedor)"]:::gw
+    GW --> EVAL["🛡️ Harness de Red-Teaming AERTH\n(Probes Adversariales · Gates de CI)"]:::eval
+    EVAL --> RAN["📡 Motor RAN de Telecomunicaciones\n(62 Tests de KPIs · Parser Binario PE MZ)"]:::ran
+```
+
 ---
 
-### 🌟 Demostraciones Principales de Ingeniería
+## 🌟 Demostraciones Principales de Ingeniería
 
-#### 🎙️ [realtime-voice-ai-bridge](https://github.com/SerjCallier/realtime-voice-ai-bridge) — Bridge de Voz IA & Streaming en Tiempo Real (<1s)
+### 🎙️ [realtime-voice-ai-bridge](https://github.com/SerjCallier/realtime-voice-ai-bridge) — Bridge de Voz IA & Streaming en Tiempo Real (<1s)
+[![CI](https://github.com/SerjCallier/realtime-voice-ai-bridge/actions/workflows/ci.yml/badge.svg)](https://github.com/SerjCallier/realtime-voice-ai-bridge/actions)
+![Node.js 20+](https://img.shields.io/badge/Node.js_20+-339933?style=flat-square&logo=node.js&logoColor=white)
+![Cero Dependencias](https://img.shields.io/badge/Cero_Dependencias_npm-000000?style=flat-square)
+![Latencia](https://img.shields.io/badge/<50ms_Barge--In-06B6D4?style=flat-square)
+![Tests](https://img.shields.io/badge/8%2F8_Tests_Pasando-10B981?style=flat-square)
+
 Servidor de streaming de audio bidireccional sub-segundo para aplicaciones de Voice AI. Desarrollado en Node.js nativo (cero dependencias npm externas).
 - **Aspectos Arquitectónicos:** Resampler DSP Mu-Law LUT 64KB en O(1) (`p95 0.03ms/frame`), limpieza instantánea del buffer de audio en `<50ms` ante interrupción (*barge-in*), marcadores "Ghost Tools" para ejecución de funciones sin bloquear el stream, y failover de WebSockets para Twilio y Telnyx.
 - **Rendimiento en Producción:** Reducción de latencia conversacional de 20s a <1s; verificado con 8/8 tests de integración en CI.
 
-#### ⚡ [llm-resilient-rotate-gateway](https://github.com/SerjCallier/llm-resilient-rotate-gateway) — Gateway LLM Multi-Proveedor Resiliente
-Proxy HTTP/SSE compatible con OpenAI, sin dependencias externas, optimizado para máxima disponibilidad y eficiencia de costos en proveedores con límites de tasa (rate limits).
+---
+
+### ⚡ [llm-resilient-rotate-gateway](https://github.com/SerjCallier/llm-resilient-rotate-gateway) — Gateway LLM Multi-Proveedor Resiliente
+[![CI](https://github.com/SerjCallier/llm-resilient-rotate-gateway/actions/workflows/ci.yml/badge.svg)](https://github.com/SerjCallier/llm-resilient-rotate-gateway/actions)
+![Node.js 20+ ESM](https://img.shields.io/badge/Node.js_20+_ESM-339933?style=flat-square&logo=node.js&logoColor=white)
+![Latencia p50](https://img.shields.io/badge/p50_0.019ms-6366F1?style=flat-square)
+![Failover](https://img.shields.io/badge/Gemini_→_Groq_→_NVIDIA-8E75C2?style=flat-square)
+![Tests](https://img.shields.io/badge/9%2F9_Tests_Pasando-10B981?style=flat-square)
+
+Proxy HTTP/SSE compatible con OpenAI, sin dependencias externas, optimizado para máxima disponibilidad y eficiencia de costos en proveedores con límites de tasa (*rate limits*).
 - **Aspectos Arquitectónicos:** Pool de rotación ponderada por menor uso de API keys balanceando límites RPM, RPD y TPM; cooldowns automáticos por zonas horarias (reseteo a medianoche del Pacífico, ventana de 60s y backoff de 5s); failover multi-proveedor transparente (`Gemini → Groq → NVIDIA NIM`); y enmascaramiento dinámico de modelos en streams SSE.
 - **Rendimiento en Producción:** Latencia adicional medida en `p50 0.0192ms` / `p95 0.0946ms`; 9/9 tests automatizados pasando en CI.
 
-#### 🛡️ [agent-evals-redteam-harness](https://github.com/SerjCallier/agent-evals-redteam-harness) — AERTH: Harness de Evals & Red-Teaming de Agentes
+---
+
+### 🛡️ [agent-evals-redteam-harness](https://github.com/SerjCallier/agent-evals-redteam-harness) — AERTH: Harness de Evals & Red-Teaming de Agentes
+[![CI](https://github.com/SerjCallier/agent-evals-redteam-harness/actions/workflows/ci.yml/badge.svg)](https://github.com/SerjCallier/agent-evals-redteam-harness/actions)
+![Python 3.12](https://img.shields.io/badge/Python_3.12-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Pydantic v2](https://img.shields.io/badge/Pydantic_v2-E92063?style=flat-square&logo=pydantic&logoColor=white)
+![Red-Teaming](https://img.shields.io/badge/4%2F4_Probes_Bloqueados-A78BFA?style=flat-square)
+
 Framework de evaluación determinista y pruebas de seguridad adversarial para agentes LLM en producción y pipelines multi-herramienta.
 - **Aspectos Arquitectónicos:** Runner de pruebas reproducible con aserciones de coincidencia exacta, scoring de precisión en firmas de llamadas a herramientas (*tool-calling*), y probes de *red-teaming* integrados en CI para bloquear inyecciones de prompt, jailbreaks DAN, fugas de PII y secuestro destructivo de herramientas.
 - **Impacto en Seguridad:** Gate de seguridad en CI al 100% que impide el despliegue de modelos no seguros o prompts vulnerables.
 
-#### 📡 [telco-ran-ai-engine](https://github.com/SerjCallier/telco-ran-ai-engine) — Motor de Diagnóstico Determinista de KPIs RAN 4G/5G
+---
+
+### 📡 [telco-ran-ai-engine](https://github.com/SerjCallier/telco-ran-ai-engine) — Motor de Diagnóstico Determinista de KPIs RAN 4G/5G
+[![CI](https://github.com/SerjCallier/telco-ran-ai-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/SerjCallier/telco-ran-ai-engine/actions)
+![Python 3.12](https://img.shields.io/badge/Python_3.12-3776AB?style=flat-square&logo=python&logoColor=white)
+![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
+![Huawei RAN](https://img.shields.io/badge/Huawei_5G%2F4G_RAN-FF0000?style=flat-square&logo=huawei&logoColor=white)
+![Tests](https://img.shields.io/badge/62%2F62_Tests_Pasando-10B981?style=flat-square)
+
 Motor de diagnóstico de causa raíz para redes celulares de acceso (4G LTE / 5G NR) que combina parsing binario físico con RAG híbrido.
 - **Aspectos Arquitectónicos:** Validación de encabezados binarios PE MZ en archivos de trazas propietarios de telecomunicaciones para evitar inferencias sobre archivos corruptos, integrado con búsqueda vectorial híbrida BM25 para recuperar guías de remedación en campo sin alucinaciones.
 - **Verificación:** Suite de 62/62 casos de prueba pytest automatizados y linteo ruff bajo estándares de SLA de grado carrier.
@@ -161,4 +198,10 @@ Motor de diagnóstico de causa raíz para redes celulares de acceso (4G LTE / 5G
 - 📊 **[ai-system-builder-showcase](https://github.com/SerjCallier/ai-system-builder-showcase):** Motor de atribución de ingresos y analítica de leads (Async Python + SQLAlchemy + LiteLLM + PostgreSQL).
 - 📅 **[klierbook](https://github.com/SerjCallier/klierbook):** Motor de reservas SaaS sin suscripción (React 19 + TypeScript + Tailwind + webhooks n8n).
 
-</details>
+---
+
+## 📬 Contacto & Enlaces
+
+- 💼 **LinkedIn:** [linkedin.com/in/sergio-callier-578b71a3](https://www.linkedin.com/in/sergio-callier-578b71a3)
+- 📧 **Email:** [callier.sergio@gmail.com](mailto:callier.sergio@gmail.com)
+- 🐙 **Perfil de GitHub:** [github.com/SerjCallier](https://github.com/SerjCallier)
